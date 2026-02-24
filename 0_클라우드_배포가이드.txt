@@ -1,0 +1,26 @@
+=====================================================
+🚀 스트림릿 클라우드 무료 배포(URL 생성) 가이드
+=====================================================
+
+현재 이 폴더(Streamlit_배포용_폴더)에 있는 파일들만 인터넷에 올리면, 
+스마트폰/PC 어디서든 1초만에 접속되는 나만의 대시보드 URL이 탄생합니다.
+
+[1단계] GitHub(깃허브)에 코드 올리기
+1. https://github.com 에 접속하여 무료 회원가입 후 로그인합니다.
+2. 좌측 상단 초록색 [New] 버튼을 눌러 새로운 저장소를 만듭니다. (이름: matepos-dashboard 등 마음대로)
+3. 'Public(공개)' 또는 'Private(비공개)' 중 선택하고 [Create repository] 클릭!
+4. 화면 중간의 "uploading an existing file" 이라는 코딱지만한 글씨를 클릭합니다.
+5. 이 [Streamlit_배포용_폴더] 안에 있는 "모든 파일과 폴더"를 드래그 앤 드롭으로 몽땅 끌어다 놓습니다.
+   (주의: "폴더 자체"를 넣는 게 아니라 폴더 "안에 있는" app.py, requirements.txt, .streamlit, streamlit_data를 전부 끌어넣어야 합니다.)
+6. 초록색 [Commit changes] 버튼을 누르면 코드는 구글 서버로 안전하게 이사 완료!
+
+[2단계] Streamlit에서 URL 발급받기
+1. https://share.streamlit.io/ 에 접속합니다.
+2. [Continue with GitHub]을 눌러 방금 가입한 깃허브 계정과 연동합니다.
+3. [New app]을 누르고, 'Deploy a public/private app from GitHub'를 선택합니다.
+4. 아까 만든 저장소 이름(Repository)을 찾아 선택합니다.
+5. 'Main file path' 칸에 `app.py` 라고 정확히 적혀 있는지 확인합니다.
+6. 우측 하단의 [Deploy!] 버튼을 누르고 1~2분 정도 기다리면...
+
+🎉 짠! 대표님만의 영구적인 웹사이트 주소(URL)가 생성되었습니다!
+이제 이 링크만 복사해서 카카오톡으로 점주님/CEO님께 던지시면 됩니다.
