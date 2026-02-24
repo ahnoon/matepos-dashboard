@@ -91,10 +91,12 @@ if not df_daily.empty:
     
     if len(selected_stores) == 0: st.warning("최소 1개의 매장을 선택해주세요."); st.stop()
         
-    # --------- 1. Data Filtering (Baemin Only) ---------
     # 메이트포스 원본 매출 중 "배달의민족"만 철저히 분리
     filtered_pos = df_daily[(df_daily['h_strnm'].isin(selected_stores)) & (df_daily['platform'] == '배달의민족')].copy()
-    filtered_dong = df_dong[df_dong['h_strnm'].isin(selected_stores)].copy()
+    
+    filtered_dong = pd.DataFrame()
+    if not df_dong.empty and 'h_strnm' in df_dong.columns:
+        filtered_dong = df_dong[df_dong['h_strnm'].isin(selected_stores)].copy()
     
     f_now = df_bm_now.copy()
     f_click = df_bm_click.copy()
